@@ -1,0 +1,55 @@
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Orçamento</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.15.5/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.15.5/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.15.5/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.15.5/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.15.5/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+
+</head>
+
+<body>
+
+    <center><form id="enviarorc">
+        <div>
+            <label><strong>Nome</strong></label><br>
+            <input type="text" name="nome" placeholder="Digite seu nome ou o nome da empresa" required>
+        </div><br>
+        <div>
+            <label><strong>E-mail</strong></label><br>
+            <input type="text" name="email" placeholder="Digite seu e-mail" required>
+        </div><br>
+        <div>
+            <label for="servico"><strong>Serviço:</strong></label><br>
+            <select name="servico">
+            <option value="contabilidade_geral">Contabilidade Geral</option>
+            <option value="consultoria_financeira">Consultoria Financeira</option>
+            <option value="consultoria_organizacional">Consultoria Organizacional</option>
+            <option value="consultoria_empresarial">Consultoria Empresarial</option>
+            <option value="administracao_condominial">Administração Condominial</option>
+            <option value="assessoria_trabalhista">Assessoria Trabalhista</option>
+            <option value="assessoria_tributaria">Assessoria Tributária</option>
+            </select>
+        </div><br>
+        <div>
+            <label for="necessidade"><strong>Necessidades:</strong></label><br>
+            <textarea name="necessidades" placeholder="Coloque suas necessidades aqui!" cols="30" rows="5" required></textarea>
+        </div>
+        <button type="submit" name="submit"> Enviar </button>
+    </form></center>
+
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase.js"></script>
+    <script src="js/dbconfig.js"></script>
+    <script src="js/Corcamento.js"></script>
+
+</body>
